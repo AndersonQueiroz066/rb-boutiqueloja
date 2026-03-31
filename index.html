@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RB boutique</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    <H1>R<span style="color: rgb(191, 67, 216);">B bou<span style="color: black;">tique</span></H1>
+    </header>
+    <main>
+    <div class="itens-loja">
+        <div class="item">
+            <img src="img/preesilha.jpeg" alt="Presilha-flor" height="110px" width="130px">
+            <p>presilha de Flor</p>
+            <p>preço: 5,00</p>
+            <button onclick="adicionarCarrinho('Presilha-de-Flor', 5.0)" class="carrinhobutton">carrinho</button>
+            <button onclick="removerDoCarrinho('Presilha-de-Flor')" class="removerCarrinho">remover</button>
+        </div>
+        <div class="item">
+            <img src="img/laçorosa.jpeg" alt="laco-rosa" height="110px" width="130px">
+            <p>Laço Rosa Cetim</p>
+            <p>preço: 15,00</p>
+            <button onclick="adicionarCarrinho('laco-rosa', 15)" class="carrinhobutton">carrinho</button>
+            <button onclick="removerDoCarrinho('laco-rosa')"  class="removerCarrinho">remover</button>
+        </div>
+        <div class="item">
+            <img src="img/fivela.jpeg" alt="fivela"  height="110px" width="130px">
+            <p>Fivela Flor</p>
+            <p>preço: 10,00</p>
+            <button onclick="adicionarCarrinho('fivela', 10)" class="carrinhobutton">carrinho</button>
+            <button onclick="removerDoCarrinho('fivela')"  class="removerCarrinho">remover</button>
+        </div>
+</div>
+    <div id="iconeCarrinho">
+        🛒
+        <span id="contador">0</span>
+    </div>
+
+    <!-- Menu do carrinho -->
+    <div id="menuCarrinho">
+        <ul id="listaCarrinho"></ul>
+        <p>Total a pagar: R$ <span id="total">0</span></p>
+    </div>
+
+    <button onclick="finalizarPedido()" class="finalizarPedido">Finalizar Pedido</button>
+    <p id="carrinhoVazio"></p>
+    </main>
+    <footer>
+        <div class="containerfooter">
+            
+        </div>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+</html>
